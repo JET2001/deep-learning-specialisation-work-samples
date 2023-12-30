@@ -39,7 +39,7 @@ Here are some assignments that serve as **work samples** of my course work.
 6. **Jazz Music Generation using LSTMs in TensorFlow**
 
    - In this assignment, we apply a one-to-many LSTM to a music generation task to generate your own Jazz Music with Deep Learning. This music generation system corresponds to 90 unique values. Each music note is mapped to some numerical index.
-   - The LSTM model would take in a zero-vector as input, and the outputs $y^(<i>)$ is then passed as input to the block $(i+1)$-th LSTM along with the activation $a^{<i>}$.
+   - The LSTM model would take in a zero-vector as input, and the outputs $y^{\langle i \rangle}$ is then passed as input to the block $(i+1)$ -th LSTM along with the activation $a^{\langle i \rangle}$.
    - The length of music for this exercise is fixed at 30 values.
 
 7. **Debiasing Word Embedding Vectors**
@@ -49,17 +49,17 @@ Here are some assignments that serve as **work samples** of my course work.
    - **Equalization** - For gender specific words, we can do an equalization algorithm for those. Equalization is applied to pairs of words that you might want to have differ only through the gender properly. Suppose that "actress" is closer to "babysit" than "actor". By applying neutralization to "babysit", you can reduce the gender stereotype associated with baby sitting, but still does not guarantee that "actor" and "actress" are equidistant from "babysit".
    - This assignment involves implementing the **neutralization** and **equalization** steps.
 
-8. Emojifying Text using GloVE Embeddings and LSTMs in TensorFlow
+8. **Emojifying Text using GloVE Embeddings and LSTMs in TensorFlow**
 
    - This assignment creates a baseline model using word embeddings, and improves it by incorporating an LSTM.
-   - The improved model involves a 2-layer LSTM network that passes the embedding of each word in the sequence into an LSTM as input, and applying a Dropout layer between the Layer 1 LSTM and Layer 2 LSTM. It outputs $y\hat$, that represents the emoji for that particular sentence.
+   - The improved model involves a 2-layer LSTM network that passes the embedding of each word in the sequence into an LSTM as input, and applying a Dropout layer between the Layer 1 LSTM and Layer 2 LSTM. It outputs ${\hat y}$, that represents the emoji for that particular sentence.
 
-9. Neural Machine Translation using Attention Model in TensorFlow
+9. **Neural Machine Translation using Attention Model in TensorFlow**
 
    - This assignment involves creating a model to translate human readable dates (20th January 2023) into machine readable dates (2023-01-20). The network will learn to output dates in the common machine readable format of "YYYY-MM-DD".
    - The human readable date is first passed into a Pre-Attention Bidirectional LSTM, which passes on the computed hidden-states into the attention model, which computes the $context$ vector for the timesteps. The $context$ vector for each timestep is passed as input into the Post-Attention Uni-Directional LSTM that has 10 outputs.
 
-10. Transformer Architecture in TensorFlow
+10. **Transformer Architecture in TensorFlow**
     - This assignment involves building and training a transformer model by creating positional encodings to capture sequential relationships in data, calculate scaled dot-product self-attention using word embeddings.
     - We also implement multi-head attention mechanism in the encoder and decoder (masked multi-head attention)
 
